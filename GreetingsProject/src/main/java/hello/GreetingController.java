@@ -16,5 +16,6 @@ private final static Logger LOGGER = Logger.getLogger(GreetingController.class.g
 		LOGGER.info("In greeting");
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
+							LOGGER.info("End greeting");
     }
 }
