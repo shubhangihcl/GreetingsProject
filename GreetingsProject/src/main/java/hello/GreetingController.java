@@ -13,9 +13,9 @@ private final static Logger LOGGER = Logger.getLogger(GreetingController.class.g
 
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-		LOGGER.info("In greeting");
+		
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
-							LOGGER.info("End greeting");
+		
     }
 }
